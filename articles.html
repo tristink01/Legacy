@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+      padding:0;
+      margin:0;
+    }
+    body {
+      background:#A1D0E2;
+      color:#00668F;
+  
+    }
+  .nav {
+      height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 3rem;
+    transition: 0.5s; 
+    font-size:3rem;
+  }
+  
+  .nav .closebtn{
+      position:absolute;
+      top:0;
+      right:25px;
+      font-size:5rem;
+      margin-left:2rem;
+  }
+  
+  
+  
+  .nav-links a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:3rem;
+  }
+  
+  #right {
+    color:red;
+  }
+  
+  #left {
+    color:whitesmoke;
+  }
+  
+  #right:hover {
+    background:red;
+    color:#111;
+      border-radius:1%;
+  }
+  
+  #left:hover {
+    background:whitesmoke;
+    color:#111;
+      border-radius:1%;
+  }
+  
+  #opnbtn {
+    font-size:3rem;
+    float:right;
+    padding:1rem;
+    background:#00668F;
+    color:#A1D0E2;
+  }
+  
+  #vid {
+    height:50%;
+    width:75%;
+    margin-left:12.5%;
+  }
+  
+  @media screen and (min-width: 500px) {
+    #right {
+    margin-left:75%;
+    color:red;
+  }
+    #left {
+      margin-right:75%;
+      color:white;
+    }
+  
+  #opnbtn {
+    font-size:5rem;
+  }
+  }
+  
+  </style>
+
+  <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  padding: 1.2rem;
+  text-align: center;
+  color: #A1D0E2;
+  background:#00668F;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 500px) {
+    .header {
+    padding: 2rem;
+    text-align: center;
+    color: #A1D0E2;
+  background:#00668F;
+    font-size: 2rem;
+}
+}
+
+.block1 .back1 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.block1 .back1:after {
+  content: '\00bb';
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.block1:hover .back1:after {
+  opacity:1;
+}
+
+
+.block1 {
+  animation:barMove 2s linear;
+  animation-fill-mode: forwards;
+  height:2rem;
+  width:auto;
+  margin:.5rem;
+  margin-bottom:3rem;
+}
+
+p {
+    margin:.5rem;
+}
+
+.flex-con {
+  display:flex;
+  border-style:solid;
+  border-width:0.5rem;
+  border-radius:10px;
+  border-color:#e5deed;
+  padding:.25rem;
+  margin:2rem;
+  background:rgba(128, 83, 172, 0.5);
+  height:10rem;
+  align-items:center;
+
+}
+
+@media screen and (max-width: 676px) {
+  .flex-con {
+    display:block;
+  border-style:solid;
+  border-radius:5px;
+    border-width:5px;
+  margin:.5rem;
+  background:rgba(128, 83, 172, 0.5);
+height:9rem;
+  }
+}
+  
+
+
+  </style>
+
+<body>
+
+    <div id = "tnav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class = "nav-links">
+        <a href="articles.html" id = "left">What I've Learned</a>
+        <a href="list.html" id = "right">How I've Learned it</a>
+        <a href="DL.html" id = "left">Daily Learnings</a>
+        <a href="contact.html" id = "right">Want  to Learn More?</a>
+      </div>
+      </div>
+      <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+      <div class="header">
+        <h1>What I've Learned</h1>
+        <p>Some articles, tutorials, and resources that I've created to show what I've learned and to, hopefully, pass that knowledge along to any readers. </p>
+      </div>
+
+      <div class = "flex-con">
+    <h1>
+    <div class = "block1"> <span class = "back1" onclick = "showText()">What goes into a good homepage? </span></div>
+        </h1>
+        <a href = # ><p id = "content1">
+        </p>
+    </a>
+    </div>
+        
+        <div class = "flex-con">
+        <h1>
+        <div class = "block1"> <span class = "back1" onclick = "revealText()">Your first contact page, and API!</span></div>
+        </h1>
+        <a href = #>
+
+        <p id = "content3">
+        </p>
+    </a>
+    </div>
+        
+        <div class = "flex-con">
+        <h1>
+        <div class = "block1"> <span class = "back1" onclick = "showText4()">All About Positioning</span></div>
+        </h1>
+        <a href = #>
+        <p id = "content4">
+        </p>
+    </a>
+        </div>
+        
+        
+        <script>
+        var x4 = document.getElementById("content4");
+        x4.style.display = "none"
+        
+        var i4 = 0;
+        var txt4 = 'In this article we go over all the different values of positioning for css, appropiate times to use them + examples. ';
+        
+        function typeWriter4() {
+          if (i4 < txt4.length) {
+            x4.innerHTML += txt4.charAt(i4);
+            i4++;
+            setTimeout(typeWriter4, 50);
+          }
+        }
+        
+        
+        function showText4() {
+          var x4 = document.getElementById("content4");
+          if (x4.style.display === "block") {
+            x4.style.display = "none";
+          } else {
+            x4.style.display = "block";
+                typeWriter4() 
+        }
+        }
+        
+        </script>
+        
+        <script>
+        
+        var j = document.getElementById("content3");
+        j.style.display = "none"
+        b = 0;
+        var text = "In this article we go over the kinds of contact pages websites often use, and how to make your own with email.js";
+        
+        function writeText() {
+          if (b < text.length) {
+            j.innerHTML += text.charAt(b);
+            b++;
+            setTimeout(writeText, 50);
+          }
+        }
+        
+        
+        function revealText() {
+          var j = document.getElementById("content3");
+          if (j.style.display === "block") {
+            j.style.display = "none";
+          } else {
+            j.style.display = "block";
+                writeText() 
+        }
+        }
+        
+        </script>
+        
+        <script>
+        var x = document.getElementById("content1");
+        x.style.display = "none"
+        
+        var i = 0;
+        var txt = 'Elements of a good homepage, how to make one, general css/html tips.';
+        
+        function typeWriter() {
+          if (i < txt.length) {
+            x.innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+          }
+        }
+        
+        
+        function showText() {
+          var x = document.getElementById("content1");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+                typeWriter() 
+        }
+        }
+        
+        </script>
+
+<script>
+    /* Open the sidenav */
+function openNav() {
+  document.getElementById("tnav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("tnav").style.width = "0";
+}
+</script>
+</body>
+</html>

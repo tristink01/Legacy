@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mini Web Lessons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  </head>
+
+<style>
+  * {
+    padding:0;
+    margin:0;
+  }
+  body {
+    background:#A1D0E2;
+    color:#00668F;
+
+  }
+.nav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3rem;
+  transition: 0.5s; 
+  font-size:3rem;
+}
+
+.nav .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:5rem;
+    margin-left:2rem;
+}
+
+
+
+.nav-links a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:3rem;
+}
+
+#right {
+  color:red;
+}
+
+#left {
+  color:whitesmoke;
+}
+
+#right:hover {
+  background:red;
+  color:#111;
+    border-radius:1%;
+}
+
+#left:hover {
+  background:whitesmoke;
+  color:#111;
+    border-radius:1%;
+}
+
+#opnbtn {
+  font-size:3rem;
+  float:right;
+  padding:1rem;
+  background:#00668F;
+  color:#A1D0E2;
+}
+
+#vid {
+  height:50%;
+  width:75%;
+  margin-left:12.5%;
+}
+
+@media screen and (min-width: 500px) {
+  #right {
+  margin-left:75%;
+  color:red;
+}
+  #left {
+    margin-right:75%;
+    color:white;
+  }
+
+#opnbtn {
+  font-size:5rem;
+}
+
+#title {
+  font-size:2rem;
+  margin:2rem;
+  margin-top:-0.5rem;
+}
+
+#vid {
+  height:50rem;
+  width:75%;
+  margin-left:12.5%;
+}
+
+}
+
+#channels {
+    background:#42b4e1;
+    color:#00668F;
+    height:auto;
+}
+
+#websites {
+    background:#00668F;
+    color:#42b4e1;
+    height:50vh;
+}
+
+
+
+</style>
+<body>
+    
+    <div id = "tnav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class = "nav-links">
+            <a href="articles.html" id = "left">What I've Learned</a>
+            <a href="list.html" id = "right">How I've Learned it</a>
+            <a href="DL.html" id = "left">Daily Learnings</a>
+            <a href="contact.html" id = "right">Want  to Learn More?</a>
+      </div>
+      </div>
+      <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+
+<section id = "channels">
+    <div class = "content">
+    <h1>These are some of my favorite channels to watch for tutorials, inspiration, or just new dev/design ideas</h1>
+    <ul>
+        <li>https://www.codecademy.com/</li>
+        <li>https://w3schools.com/</li>
+        <li>https://www.phind.com/search?home=true</li>
+        <li>https://developer.mozilla.org/en-US/</li>
+        <li>https://dev.to/</li>
+        <li>https://learn.microsoft.com/#!/</li>
+        <li>https://www.pluralsight.com/</li>
+        <li>https://www.theodinproject.com/</li>
+        <li>https://www.coursera.org/</li>
+        <li>https://htmldog.com/</li>
+        <li>https://roadmap.sh/</li>
+        <li>https://codehs.com/</li>
+        <li>https://www.freecodecamp.org/</li>
+        <li>https://scrimba.com/</li>
+        <li>https://cssreference.io/</li>
+        <li>https://bulma.io/</li>
+        <li>https://htmlreference.io/</li>
+        <li>https://www.frontendmentor.io/</li>
+        <li>https://devchallenges.io/</li>
+        <li>https://www.codementor.io/</li>
+        <li>https://algorithm.codingdojo.com/</li>
+        <li>https://cssbattle.dev/</li>
+        <li>https://codier.io/</li>
+        <li>https://html.com/</li>
+        <li>https://caniuse.com/</li>
+        <li>https://css-tricks.com/</li>
+        <li>https://www.30secondsofcode.org/</li>
+        <li>https://javascript30.com/</li>
+    </div>
+    </ul>
+</section>
+
+<section id = "websites">
+    <h1>Extremely useful websites I visit for tutorials, guides, or to review documentation</h1>
+    <ul>
+        <li>https://www.youtube.com/@SuperSimpleDev</li>
+        <li>https://www.youtube.com/@js-mastery</li>
+        <li>https://www.youtube.com/@WebDevSimplified</li>
+        <li>https://www.youtube.com/@thenewboston</li>
+        <li>https://www.youtube.com/@Dani_Krossing</li>
+        <li>https://www.youtube.com/@KevinPowell</li>
+        <li>https://www.youtube.com/@Dannycademy</li>
+        <li>https://www.youtube.com/@codecademy</li>
+        <li>https://www.youtube.com/@TiffInTech</li>
+    </ul>
+</section>
+
+
+<script>
+    /* Open the sidenav */
+function openNav() {
+  document.getElementById("tnav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("tnav").style.width = "0";
+}
+</script>
+</body>
+</html>
