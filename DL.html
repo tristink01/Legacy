@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mini Web Lessons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  </head>
+
+<style>
+  * {
+    padding:0;
+    margin:0;
+    font-family:'Poppins', sans-serif;
+  }
+  body {
+    background:#A1D0E2;
+    color:#00668F;
+
+  }
+.nav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3rem;
+  transition: 0.5s; 
+  font-size:3rem;
+}
+
+.nav .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:5rem;
+    margin-left:2rem;
+}
+
+
+
+.nav-links a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:3rem;
+}
+
+#right {
+  color:red;
+}
+
+#left {
+  color:whitesmoke;
+}
+
+#right:hover {
+  background:red;
+  color:#111;
+    border-radius:1%;
+}
+
+#left:hover {
+  background:whitesmoke;
+  color:#111;
+    border-radius:1%;
+}
+
+#opnbtn {
+  font-size:3rem;
+  float:right;
+  padding:1rem;
+  background:#00668F;
+  color:#A1D0E2;
+}
+
+.clicky {
+    margin:1rem;
+    font-size:2rem;
+}
+.list {
+    margin:1rem;
+}
+
+hr {
+    border: 5px solid blue;
+  border-radius: 5px;
+}
+
+#bas {
+    display:none;
+}
+
+
+
+@media screen and (min-width: 500px) {
+  #right {
+  margin-left:75%;
+  color:red;
+}
+  #left {
+    margin-right:75%;
+    color:white;
+  }
+
+#opnbtn {
+  font-size:5rem;
+}
+
+.clicky {
+    margin:1rem;
+    font-size:3rem;
+}
+
+.list {
+    margin:1rem;
+}
+
+
+
+}
+
+</style>
+<body>
+    
+    <div id = "tnav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class = "nav-links">
+          <a href="articles.html" id = "left">My articles, tutorials, and guides</a>
+          <a href="list.html" id = "right">All of my resources</a>
+          <a href="DL.html" id = "left">Confused on Where to Start?</a>
+          <a href="contact.html" id = "right">Have an Idea?</a>
+      </div>
+      </div>
+      <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+     <br>
+
+    <h1 class = "clicky" onclick = "revElem()">HTML/CSS Basics <b>+</b></h1>
+    <ul class = "list" id = "bas">
+        <li a href = "https://html.com/">https://html.com/, HTML</li>
+        <li a href = "https://www.w3schools.com/html/html_intro.asp">w3schools.com, HTML</li>
+        <li a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">developer.mozilla.org, CSS</li>
+        <li a href = "https://www.codecademy.com/learn/learn-css">codeacadamy.com, CSS</li>
+        <li a href = "https://www.css3.info/">css3.info, CSS</li>
+
+    </ul>
+    <hr>
+
+    <h1 class = "clicky" onclick = "revElem1()">Advanced CSS <b>+</b></h1>
+    <u class = "list" id = "adcss">
+        <li a href = "https://css-tricks.com/">css-tricks.com, code snippets. Interesting designs + advanced concepts.</li>
+        <li a href = "https://quirksmode.org/css/">quirksmode.org, more of a docs style website featuring some guides on more advanced concepts</li>
+        <li a href = "https://csszengarden.com/">csszengarden.com, similar to css-tricks.com</li>
+        <li a href = "https://www.simplilearn.com/tutorials/css-tutorial/advanced-css">simplilearn.com, more of a tutorial based website with videos to follow</li>
+        <li a href = "https://tympanus.net/codrops/">tympanus.net/codrops, great website that features many tutorials, articles, snippets, and docs</li>
+
+    </u>
+    <hr>
+
+
+<script>
+    /* Open the sidenav */
+function openNav() {
+  document.getElementById("tnav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("tnav").style.width = "0";
+}
+</script>
+<script>
+function revElem() {
+    var x = document.getElementById("bas");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function revElem1() {
+    var y = document.getElementById("adcss");
+    if (y.style.display === "none") {
+      y.style.display = "block";
+    } else {
+      y.style.display = "none";
+    }
+  }
+
+</script>
+
+</body>
+</html>

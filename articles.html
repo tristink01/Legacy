@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+      padding:0;
+      margin:0;
+    }
+    body {
+      background:#A1D0E2;
+      color:#00668F;
+  
+    }
+  .nav {
+      height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 3rem;
+    transition: 0.5s; 
+    font-size:3rem;
+  }
+  
+  .nav .closebtn{
+      position:absolute;
+      top:0;
+      right:25px;
+      font-size:5rem;
+      margin-left:2rem;
+  }
+  
+  
+  
+  .nav-links a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:3rem;
+  }
+  
+  #right {
+    color:red;
+  }
+  
+  #left {
+    color:whitesmoke;
+  }
+  
+  #right:hover {
+    background:red;
+    color:#111;
+      border-radius:1%;
+  }
+  
+  #left:hover {
+    background:whitesmoke;
+    color:#111;
+      border-radius:1%;
+  }
+  
+  #opnbtn {
+    font-size:3rem;
+    float:right;
+    padding:1rem;
+    background:#00668F;
+    color:#A1D0E2;
+  }
+  
+  #vid {
+    height:50%;
+    width:75%;
+    margin-left:12.5%;
+  }
+  
+  @media screen and (min-width: 500px) {
+    #right {
+    margin-left:75%;
+    color:red;
+  }
+    #left {
+      margin-right:75%;
+      color:white;
+    }
+  
+  #opnbtn {
+    font-size:5rem;
+  }
+  }
+  
+  </style>
+
+  <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  padding: 1.2rem;
+  text-align: center;
+  color: #A1D0E2;
+  background:#00668F;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 500px) {
+    .header {
+    padding: 2rem;
+    text-align: center;
+    color: #A1D0E2;
+  background:#00668F;
+    font-size: 2rem;
+}
+}
+
+.block1 .back1 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.block1 .back1:after {
+  content: '\00bb';
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.block1:hover .back1:after {
+  opacity:1;
+}
+
+
+.block1 {
+  animation:barMove 2s linear;
+  animation-fill-mode: forwards;
+  height:2rem;
+  width:auto;
+  margin:.5rem;
+  margin-bottom:3rem;
+}
+
+p {
+    margin:.5rem;
+}
+
+.flex-con {
+  display:flex;
+  border-style:solid;
+  border-width:0.5rem;
+  border-radius:10px;
+  border-color:#e5deed;
+  padding:.25rem;
+  margin:2rem;
+  background:rgba(128, 83, 172, 0.5);
+  height:10rem;
+  align-items:center;
+
+}
+
+@media screen and (max-width: 676px) {
+  .flex-con {
+    display:block;
+  border-style:solid;
+  border-radius:5px;
+    border-width:5px;
+  margin:.5rem;
+  background:rgba(128, 83, 172, 0.5);
+height:9rem;
+  }
+}
+  
+
+
+  </style>
+
+<body>
+
+    <div id = "tnav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class = "nav-links">
+          <a href="articles.html" id = "left">My articles, tutorials, and guides</a>
+          <a href="list.html" id = "right">All of my resources</a>
+          <a href="DL.html" id = "left">Confused on Where to Start?</a>
+          <a href="contact.html" id = "right">Have an Idea?</a>
+      </div>
+      </div>
+      <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+      <div class="header">
+        <h1>What I've Learned</h1>
+        <p>Some articles, tutorials, and resources that I've created to show what I've learned and to, hopefully, pass that knowledge along to any readers. </p>
+      </div>
+
+      <div class = "flex-con">
+    <h1>
+    <div class = "block1"> <span class = "back1" onclick = "showText()">What goes into a good homepage? </span></div>
+        </h1>
+        <a href = # ><p id = "content1">
+        </p>
+    </a>
+    </div>
+        
+        
+        <div class = "flex-con">
+          <h1>
+          <div class = "block1"> <span class = "back1" onclick = "showText5()">30 Most Commonly Used HTML Tags</span></div>
+          </h1>
+          <a href = #>
+          <p id = "content5">
+          </p>
+          </a>
+          </div>
+
+          <div class = "flex-con">
+            <h1>
+            <div class = "block1"> <span class = "back1" onclick = "showText6()">Useful CSS elements</span></div>
+            </h1>
+            <a href = #>
+            <p id = "content6">
+            </p>
+            </a>
+            </div>
+
+            <div class = "flex-con">
+              <h1>
+              <div class = "block1"> <span class = "back1" onclick = "showText8()">All About Positioning</span></div>
+              </h1>
+              <a href = #>
+              <p id = "content8">
+              </p>
+              </a>
+              </div>
+
+
+            <div class = "flex-con">
+              <h1>
+              <div class = "block1"> <span class = "back1" onclick = "revealText()">Your first contact page, and API!</span></div>
+              </h1>
+              <a href = #>
+      
+              <p id = "content3">
+              </p>
+          </a>
+          </div>  
+
+          <div class = "flex-con">
+            <h1>
+            <div class = "block1"> <span class = "back1" onclick = "showText9()">My Favorite Channels</span></div>
+            </h1>
+            <a href = #>
+            <p id = "content9">
+            </p>
+            </a>
+            </div>
+
+            <script>
+              var x9 = document.getElementById("content9");
+              x9.style.display = "none"
+              
+              var i9 = 0;
+              var txt9 = 'My favorite youtube channels to watch when I need inspiration, education, or an explanation for web design/development';
+              
+              function typeWriter9() {
+                if (i9 < txt9.length) {
+                  x9.innerHTML += txt9.charAt(i9);
+                  i9++;
+                  setTimeout(typeWriter9, 50);
+                }
+              }
+              
+              
+              function showText9() {
+                var x9 = document.getElementById("content9");
+                if (x9.style.display === "block") {
+                  x9.style.display = "none";
+                } else {
+                  x9.style.display = "block";
+                      typeWriter9() 
+              }
+              }
+              
+              </script>
+
+
+
+          <script>
+            var x8 = document.getElementById("content8");
+            x8.style.display = "none"
+            
+            var i8 = 0;
+            var txt8 = '9 different ways to positiong things in css, ranked on responsiveness! ';
+            
+            function typeWriter8() {
+              if (i8 < txt8.length) {
+                x8.innerHTML += txt8.charAt(i8);
+                i8++;
+                setTimeout(typeWriter8, 50);
+              }
+            }
+            
+            
+            function showText8() {
+              var x8 = document.getElementById("content8");
+              if (x8.style.display === "block") {
+                x8.style.display = "none";
+              } else {
+                x8.style.display = "block";
+                    typeWriter8() 
+            }
+            }
+            
+            </script>
+
+
+
+          <script>
+            var x5 = document.getElementById("content5");
+            x5.style.display = "none"
+            
+            var i5 = 0;
+            var txt5 = 'In this article we explore some of the most useful html tags, and some good examples of use. ';
+            
+            function typeWriter5() {
+              if (i5 < txt5.length) {
+                x5.innerHTML += txt5.charAt(i5);
+                i5++;
+                setTimeout(typeWriter5, 50);
+              }
+            }
+            
+            
+            function showText5() {
+              var x5 = document.getElementById("content5");
+              if (x5.style.display === "block") {
+                x5.style.display = "none";
+              } else {
+                x5.style.display = "block";
+                    typeWriter5() 
+            }
+            }
+            
+            </script>
+        
+
+
+        <script>
+        var x6 = document.getElementById("content6");
+        x6.style.display = "none"
+        
+        var i6 = 0;
+        var txt6 = 'Simple yet powerful css tools web designers and developers use to spice up their web projects! ';
+        
+        function typeWriter6() {
+          if (i6 < txt6.length) {
+            x6.innerHTML += txt6.charAt(i6);
+            i6++;
+            setTimeout(typeWriter6, 50);
+          }
+        }
+        
+        
+        function showText6() {
+          var x6 = document.getElementById("content6");
+          if (x6.style.display === "block") {
+            x6.style.display = "none";
+          } else {
+            x6.style.display = "block";
+                typeWriter6() 
+        }
+        }
+        
+        </script>
+        
+        <script>
+        
+        var j = document.getElementById("content3");
+        j.style.display = "none"
+        b = 0;
+        var text = "In this article we go over the kinds of contact pages websites often use, and how to make your own with email.js";
+        
+        function writeText() {
+          if (b < text.length) {
+            j.innerHTML += text.charAt(b);
+            b++;
+            setTimeout(writeText, 50);
+          }
+        }
+        
+        
+        function revealText() {
+          var j = document.getElementById("content3");
+          if (j.style.display === "block") {
+            j.style.display = "none";
+          } else {
+            j.style.display = "block";
+                writeText() 
+        }
+        }
+        
+        </script>
+        
+        <script>
+        var x = document.getElementById("content1");
+        x.style.display = "none"
+        
+        var i = 0;
+        var txt = 'Elements of a good homepage, how to make one, general css/html tips.';
+        
+        function typeWriter() {
+          if (i < txt.length) {
+            x.innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+          }
+        }
+        
+        
+        function showText() {
+          var x = document.getElementById("content1");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+                typeWriter() 
+        }
+        }
+        
+        </script>
+
+<script>
+    /* Open the sidenav */
+function openNav() {
+  document.getElementById("tnav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("tnav").style.width = "0";
+}
+</script>
+</body>
+</html>
