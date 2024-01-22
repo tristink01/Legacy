@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+ <title>Css Positioning!</title>
+</head>
+<style>
+*{
+ padding: 0;
+ margin: 0;
+ background:rgb(224, 150, 150);
+ 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section#intro {
+ background-color: rgba(147, 71, 214, 0.7);
+ padding: 3rem;
+ 
+}
+
+main {
+    align-items:middle;
+           max-width:1000px;
+           margin:auto;
+           background-color: rgba(147, 71, 214, 0.7);
+
+}
+
+main > article {
+    margin:.5rem;
+
+}
+
+section#content article {
+ margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+ background-color: #333;
+ color: white;
+ padding: 10px;
+ text-align: center;
+}
+
+/* Responsive image styles */
+.responsive {
+ max-width: 100%;
+ height: auto;
+}
+
+article {
+    background:rgb(224, 150, 150);
+    color:rgb(40, 91, 91);
+    border:5px solid rgb(40, 91, 91);
+    margin:2rem;
+    padding:3rem;
+}
+
+.p {
+    background-color: rgba(147, 71, 214, 0.1);
+}
+
+#stuff {
+    margin:1rem;
+}
+
+.nav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3rem;
+  transition: 0.5s; 
+  font-size:3rem;
+}
+
+.nav .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:5rem;
+    margin-left:2rem;
+}
+
+
+
+.nav-links a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:3rem;
+}
+
+#right {
+  color:red;
+}
+
+#left {
+  color:whitesmoke;
+}
+
+#right:hover {
+  background:red;
+  color:#111;
+    border-radius:1%;
+}
+
+#left:hover {
+  background:whitesmoke;
+  color:#111;
+    border-radius:1%;
+}
+
+#opnbtn {
+  font-size:3rem;
+  float:right;
+  padding:1rem;
+  background:#00668F;
+  color:#A1D0E2;
+}
+
+
+
+</style>
+<body>
+ <div id = "tnav" class="nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class = "nav-links">
+      <a href="articles.html" id = "left">My articles, tutorials, and guides</a>
+      <a href="list.html" id = "right">All of my resources</a>
+      <a href="DL.html" id = "left">Confused on Where to Start?</a>
+      <a href="contact.html" id = "right">Have an Idea?</a>
+  </div>
+  </div>
+  <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+  <section id="intro">
+    <h1 class = "p">Positioning with Css</h1>
+    <p class = "p">Hey guys! Today we're gonna be going over how to positiong elements on a webpage in several different ways, that way you have all the tools you need for positioning!</p>
+   </section>
+  <main>
+   
+   
+   <section id="content">
+    <br>
+    <div id = "stuff">
+
+    <a href = "https://jsfiddle.net/Trikolby01/386jLygz/15/"> <h1>This is the Example!</h1> </a>
+    <br>
+    <h1>Document Flow: </h1>
+    <p>The document flow of a website is how elements will naturally be placed on a webpage without any special positioning. </p>
+    
+    </div>
+    
+    <article>
+       <h2>1. Static</h2>
+       <p>This is the absolute default positioning method. The element will go to the top leftmost corner, wherever it is able to fit
+       </p>
+     </article>
+
+     <article>
+        <h2>2. Relative</h2>
+        <p>Positioning something with the relative property will present the element a certain amount of pixels away from it's default position. Relative positions can be moved left, right, up, or down a certain amount of units away using those properties, respectively. 
+        </p>
+      </article>
+
+      <article>
+        <h2>3. Fixed</h2>
+        <p>This will position the element relative to the <b>Browser Window</b>. This means it'll stay in the same place if the page is scrolled. 
+        </p>
+      </article>
+
+      <article>
+        <h2>4. Absolute</h2>
+        <p>Very similar to relative except it will not move according to the document flow, it's not anchored to any element unless specified.  
+        </p>
+      </article>
+
+      <article>
+        <h2>5. Sticky</h2>
+        <p>Sticky is a little bit complex. The position will remain in place, until the page is scrolled. Then, the element will stay in a certain place on the screen. You'll see what I mean in the example.  
+        </p>
+      </article>
+
+      <article>
+        <h2>6. Float</h2>
+        <p>!DISCLAIMER! This is somewhat outdated, this positioning is often found in very basic webpages or old webpages! Float has 2 values, left and right. You can position an element (in the normal horizontal flow of the document)
+        </p>
+      </article>
+
+      <article>
+        <h2>7. Flexbox</h2>
+        <p>Flexbox is very similar to float, with a little bit more customization. With flexbox, you are able to control how far left or right an element will be in a document with units, it's more responsive than positioning absolutely. </p>
+      </article>
+
+      <article>
+        <h2>8. Grid</h2>
+        <p>Positioning with Grid is one of the more responsive and modern methods of web design. Positioning with grid you are able to fully customize how elements will appear on a screen by dividing the screen into a 'grid' and specifying box size, etc. </p>
+      </article>
+
+      <article>
+        <h2>9. Z-index</h2>
+        <p>Positioning with Z-index is used with elements that overlap, the Z-index determines which element will 'cover' the other. The higher the Z-index, the more priority the element is given. EX: An element with a value of Z-index: 2, will cover Z-index:1. 
+        </p>
+    </article>
+
+
+
+
+   </section>
+ </main>
+ 
+ <script>
+    /* Open the sidenav */
+function openNav() {
+  document.getElementById("tnav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("tnav").style.width = "0";
+}
+</script>
+
+</body>
+</html>

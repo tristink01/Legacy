@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+  <title>30 Most Used HTML Tags</title>
+</head>
+<style>
+    /* CSS Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+ 
+    /* General Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background:#A1D0E2;
+      color:#00668F;
+    }
+ 
+    main {
+        max-width: 1000px;
+        margin: auto;
+        padding: 10px;
+    }
+ 
+    h1, h2, h3, h4, h5, h6 {
+        color: #007BFF;
+    }
+ 
+    p {
+        margin-bottom: 20px;
+    }
+ 
+    /* Text Tags */
+    .text-tags h1 {
+        font-weight: bold;
+    }
+ 
+    .text-tags b {
+        font-weight: bold;
+    }
+ 
+    .text-tags i {
+        font-style: italic;
+    }
+ 
+    .text-tags u {
+        text-decoration: underline;
+    }
+ 
+    .text-tags a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+ 
+    /* Listed Tags */
+    .listed-tags ul,
+    .listed-tags ol {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+ 
+    .listed-tags li {
+        margin-bottom: 10px;
+    }
+ 
+    /* Advanced Tags */
+    .advanced-tags .div {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    #intro {
+        background:rgba(190, 171, 171, 0.7);
+        padding:1rem;
+        border-color:#007BFF;
+
+    }
+
+    #cool {
+ background-color: #4CAF50; /* Green background */
+ border: none; /* Remove default border */
+ color: white; /* White text */
+ padding: 15px 32px; /* Some padding */
+ text-align: center; /* Centered text */
+ text-decoration: none; /* No underline */
+ display: inline-block;
+ font-size: 16px;
+ transition-duration: 0.4s; /* Transition duration */
+ cursor: pointer; /* Pointer cursor on hover */
+ border-radius: 12px; /* Rounded corners */
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Shadow effect */
+}
+
+#cool:hover {
+ background-color: #45a049; /* Darker green on hover */
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* Bigger shadow on hover */
+}
+
+.nav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3rem;
+  transition: 0.5s; 
+  font-size:3rem;
+}
+
+.nav .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:5rem;
+    margin-left:2rem;
+}
+
+
+
+.nav-links a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:3rem;
+}
+
+#right {
+  color:red;
+}
+
+#left {
+  color:whitesmoke;
+}
+
+#right:hover {
+  background:red;
+  color:#111;
+    border-radius:1%;
+}
+
+#left:hover {
+  background:whitesmoke;
+  color:#111;
+    border-radius:1%;
+}
+
+#opnbtn {
+  font-size:3rem;
+  float:right;
+  padding:1rem;
+  background:#00668F;
+  color:#A1D0E2;
+}
+ </style>
+<body>
+    <div id = "tnav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class = "nav-links">
+          <a href="articles.html" id = "left">My articles, tutorials, and guides</a>
+          <a href="list.html" id = "right">All of my resources</a>
+          <a href="DL.html" id = "left">Confused on Where to Start?</a>
+          <a href="contact.html" id = "right">Have an Idea?</a>
+      </div>
+      </div>
+      <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+    <main>
+        <article>
+            <section id = "intro">
+                <h2>What are some of the common html tags that we use as web developers/designers?</h2>
+                <p>Hello again everyone! Today we're gonna be going over 20 essential html tags that really help to organize and structure your website!</p>
+              </section>
+
+          <section>
+            <h2>Structuring tags</h2>
+            <p>These tags are just used to structure things in your html document to make it more readable and easier to understand!</p>
+            <h1>&lt;head&gt;</h2>
+            <p>This is a head tag. All the important information about the document is stored inside this tag, links to style sheets, scripts, the title of the webpage, etc.</p>
+            <h1>&lt;body&gt;</h2>
+            <p>This is a <b>body</b> tag. This is where all of the content of your website goes. Everything that the user sees goes in here, don't forget to put your scripts inside this tag as well!</p>
+            <h1>&lt;footer&gt;</h2>
+            <p>This is a <b>footer</b> tag. You can think of this as a small conclusion of your website, all of your contact information or any links to other websites can go in this section. This is always at the bottom of the website</p>
+            <h1>&lt;title&gt;</h2>
+            <p>This is a <b>title</b> tag. This is put inside the head tag, defines the <b>title</b> of your webpage (the text at the top of the tab)</p>
+            <h1>&lt;section&gt;</h2>
+            <p>This is a <b>section</b> tag. This tag is used in the body tag, and it helps to define individual <b>sections</b> of your webpage. Usually the background, text, or focus of the element will change from section to section.</p>
+            <h1>&lt;script&gt;</h2>
+            <p>This is a <b>script</b> tag. This tag is used in the body tag. You can store your javascript elements/code in here to spice up your website. Or you can link to front-end libraries/other scripts!</p>
+           
+        </section>
+
+        <section>
+            <H2>Text Tags</H2>
+            <h1>&lt;h1&gt; to &lt;h5&gt;</h1>
+            <p>This defines big lettering/headings of areas, with &lt;h1&gt; being the highest and &lt;h5&gt; the least.</p>
+            <h2>This is an h1 tag</h2>
+            <h3>This is an h2 tag</h3>
+            <h4>This is an h3 tag</h4>
+            <h5>This is an h4 tag</h5>
+            <h6>This is an h5 tag</h6>
+            <h1>&lt;p&gt;</h1>
+            <p>This is a paragraph tag. Best used for groups of small text where you need to write a <b>paragraph</b></p>
+            <h1>&lt;b&gt;</h1>
+            <b>bold text</b>
+            <p>This is a bold tag. This is used to make text <b>bold</b></p>
+            <h1>&lt;i&gt;</h1>
+            <i>italic text</i>
+            <p>This is an italic tag. This is used to make text <b>italic</b></p>
+            <h1>&lt;u&gt;</h1>
+            <u>underlined text</u>
+            <p>This is an underlined tag. This is used to make text <b>underlined</b></p>
+            <h1>&lt;a href = ""&gt;</h1>
+            <a href = "www.wikipedia.com">linked text</a>
+            <p>This is a link tag. This is used to make text <b>link</b> to somewhere else</p>
+            <h1>listed tags</h1>
+            <p>These are the tags that help to create a list in your html document</p>
+            <h1>&lt;ul&gt;</h1>
+            <ul>
+                <li>This is an unordered list</li>
+                <li>This is list uses bullet points, to denote seperate list items!</li>
+            </ul>
+            <h1>&lt;ol&gt;</h1>
+            <ol>
+                <li>This is an ordered list!</li>
+                <li>It keepts track of items inside the list using numbers</li>
+            </ol>
+            <h1>&lt;li&gt;</h1>
+            <p>This is a li tag, used to create items inside of a list</p>
+            <h1>&lt;div&gt;</h2>
+                <p>This is a <b>div</b> tag. This tag is used to store elements together, you can think of this as an alternative version of the section tag, except more customizable!</p>
+            <h1>&lt;button&gt;</h2>
+                    <p>This is a <b>button</b> tag. This tag is extremely versatile! The button tag is used to create buttons on your website that can be used for anything from linking to other pages, creating interactive effects, or opening/closing a menu!</p>
+            <button id = "cool">I'm a button! Click me!</button>
+          </section>
+         
+
+        </article>
+      </main>
+      <script>
+        /* Open the sidenav */
+    function openNav() {
+      document.getElementById("tnav").style.width = "100%";
+    }
+    
+    /* Close/hide the sidenav */
+    function closeNav() {
+      document.getElementById("tnav").style.width = "0";
+    }
+    </script>
+</body>
+</html>

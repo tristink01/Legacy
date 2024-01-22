@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Page</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+body {
+    background:#A1D0E2;
+    color:#00668F;
+
+  }
+.nav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3rem;
+  transition: 0.5s; 
+  font-size:3rem;
+}
+
+.nav .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:5rem;
+    margin-left:2rem;
+}
+
+.nav-links a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:3rem;
+}
+
+#right {
+  color:red;
+}
+
+#left {
+  color:whitesmoke;
+}
+
+#right:hover {
+  background:red;
+  color:#111;
+    border-radius:1%;
+}
+
+#left:hover {
+  background:whitesmoke;
+  color:#111;
+    border-radius:1%;
+}
+
+#opnbtn {
+  font-size:3rem;
+  float:right;
+  padding:1rem;
+  background:#00668F;
+  color:#A1D0E2;
+}
+
+main {
+  padding: 15px;
+  max-width:1000px;
+  margin:auto;
+}
+
+section#intro {
+  background-color: rgba(92, 137, 209, 0.7);
+  padding: 40px;
+  margin:0;
+}
+
+section#content {
+  margin-top: 15px;
+}
+
+.responsive {
+  max-width: 75%;
+  height: auto;
+  margin:1rem;
+
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div id = "tnav" class="nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class = "nav-links">
+      <a href="articles.html" id = "left">My articles, tutorials, and guides</a>
+      <a href="list.html" id = "right">All of my resources</a>
+      <a href="DL.html" id = "left">Confused on Where to Start?</a>
+      <a href="contact.html" id = "right">Have an Idea?</a>
+  </div>
+  </div>
+  <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+
+    <main>
+
+    
+        <section id="intro">
+          <h1>What goes into a good homepage?</h1>
+          <p>Hello everyone! Today we're going over what a homepage is, some common traits of a good homepage, and my go-to design for a neat, concise looking homepage</p>
+        </section>
+        <br>
+        <section id="content">
+          <article>
+            <h2>What even is a homepage, and what goes on there?</h2>
+            <p>A homepage can be best explained as your website's <b>introduction</b> or first impression. When users open your website, the homepage is the first thing they will see. Your homepage should be brief enough to understand at a quick glance, but informative enough to explain to visitors what your website is about. Your homepage should include a <b>quick description</b> of what your website is about, and a <b>call to action</b>. Many websites will also include examples/testimonies of what they do on their homepage, when you scroll further down. </p>
+      <br>
+      <h2>What is a call to action?</h2>
+        <p>A <b>call to action</b> is something that prompts/encourages users to explore your website some more. Your call to action might be a button, link, form, clickable paragraph, etc. On websites, you might often see a learn more button, or a "buy now" button. That's a call to action. Now, let's go over some of these examples.</p>
+    <br>
+        <h2>Jimmy John's website</h2>
+    <p>Because I'm really hungry right now, let's take a look at Jimmy John's website. </p>
+    <img src = 'JimmyJohn.png' class = "responsive">
+    <br>
+    <p>This is a really good example of a homepage. Take a moment to pause and look it over, where's the call to action? What does this company do? This homepage features just enough information to tell the user what they are, (a sandwich company), while also not overloading the user with content. On the right side it features one of their sandwiches (this is done with the background image they used), and on the left they feature their <b>call to action</b>, signing up to join their rewards program and order food. </p>
+    <br>
+    <h2>My go-to design</h2> 
+    <img src = 'Jb_HomePage.png' class = "responsive">
+    <br>
+    <p>This is my favorite design for a homepage, or some variation of this. I like to use this template/design style because it's quick, concise, draws users to what I'm making, and it doesn't overwhelm users. It can be very tempting to attack the user with pop-ups and content right away, but it's very important to remember to keep it brief at a first glance. </p>
+    <br>
+    <a href = "https://jsfiddle.net/Trikolby01/n42bg3kt/8/"><h2>The code</h2></a>
+    <p>Here's a link to my homepage design. Please feel free to use this in your next project, and add your own creative spin on it! </p>
+</article>
+        </section>
+      </main>
+    
+      <script>
+        /* Open the sidenav */
+    function openNav() {
+      document.getElementById("tnav").style.width = "100%";
+    }
+    
+    /* Close/hide the sidenav */
+    function closeNav() {
+      document.getElementById("tnav").style.width = "0";
+    }
+    </script>
+
+</body>
+</html>
+

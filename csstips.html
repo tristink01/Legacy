@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Front-end Tips!</title>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+
+<style>
+
+/* General styles */
+*{
+ padding: 0;
+ margin: 0;
+ font-family: 'Roboto', sans-serif;
+}
+
+body {
+ line-height: 1.6em;
+ background:#A1D0E2;
+    color:#00668F;
+
+}
+
+
+/* Main content styles */
+main {
+ padding: 20px;
+}
+
+section#intro {
+ margin-bottom: 10px;
+ padding:2rem;
+ color:white;
+ background:rgba(0,0,0,0.7);
+ border-radius:5px;
+}
+
+section#content {
+ margin-top: 20px;
+}
+
+section#content h2 {
+ color: #333;
+}
+
+section#content p {
+ margin-bottom: 20px;
+}
+
+
+
+.nav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3rem;
+  transition: 0.5s; 
+  font-size:3rem;
+}
+
+.nav .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:5rem;
+    margin-left:2rem;
+}
+
+.nav-links a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:3rem;
+}
+
+#right {
+  color:red;
+}
+
+#left {
+  color:whitesmoke;
+}
+
+#right:hover {
+  background:red;
+  color:#111;
+    border-radius:1%;
+}
+
+#left:hover {
+  background:whitesmoke;
+  color:#111;
+    border-radius:1%;
+}
+
+#opnbtn {
+  font-size:3rem;
+  float:right;
+  padding:1rem;
+  background:#00668F;
+  color:#A1D0E2;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+ body {
+   font-size: 18px;
+ }
+}
+</style>
+<body>
+
+    <div id = "tnav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class = "nav-links">
+          <a href="articles.html" id = "left">My articles, tutorials, and guides</a>
+          <a href="list.html" id = "right">All of my resources</a>
+          <a href="DL.html" id = "left">Confused on Where to Start?</a>
+          <a href="contact.html" id = "right">Have an Idea?</a>
+      </div>
+      </div>
+      <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+    <section id="intro">
+        <h1>General Css Tips!</h1>
+        <p>Hey Guys! Today we're gonna be going over some really useful front-end tools that you can use to spice up your website, make it more responsive, and generally look better! </p>
+      </section>
+ <main>
+   <section id="content">
+     <article>
+       <h2>CSS Media Queries</h2>
+       <p>Css Media Queries are one of the top ways to make your website more responsive. What CSS Media Queries do is change the stylign of an element, depending on browser size!</p>
+       <a href = "https://jsfiddle.net/Trikolby01/kt8vy6w3/"><p>Here is an example of Media Quieries in action!</p></a>
+    </article>
+    <article>
+        <h2>Using Margins and Padding!</h2>
+        <p>Spacing your website correctly is crucial to making it look more professional. If you space things too close together, your website can look crowded and overwhelming. If you space things too far apart, your website can look empty or lacking detail! One way to fix that is playing with the margin and padding values. The <b>Margin</b> sets how far apart an element is from other elements. The <b>Padding</b> sets the distance between an element and it's border. </p>
+        <a href = "#"><p>Here is an example of Margins and Padding in action!</p></a>
+     </article>
+     <article>
+        <h2>Css Units!</h2>
+        <p>In the previous example, we went over spacing things out with margin and padding. In this example we're gonna go over some units commonly used in CSS. </p>
+        <a href = "#"><p>Here you can see all the units commonly used!</p></a>
+     </article>
+     <article>
+        <h2>Front-End Libraries!</h2>
+        <p>Sometimes bare CSS doesn't have all of the tools that a developer may want, or it takes too much time to program. That's where front-end libraries come in handy. You can think of Front-end libraries as <b>expansion packs</b> for CSS. They provide more tools and faster shortcuts to styling your website. Below is a small list of some of my favorite front-end libraries. </p>
+        <ul>
+            <a href = "https://getbootstrap.com/docs/5.3/getting-started/introduction/"><li>Bootstrap. This is a very useful front-end library that comes packed with an endless amount of css tools to spice up your website. It has lots of information in the docs and vvery useful css shortcuts. </li></a>
+            <a href = "https://jquery.com/"><li>Jquery. This is a front-end library useful for powering your javascript in your website. </li></a>
+            <a href = "https://react.dev/"><li>React. React is another powerful front-end library, even providing some useful features for back-end! I like react because it comes with both css and javascript features, and it's so widely used that there is tutorials for everything!</li></a>
+            <a href = "https://vuejs.org/"><li>Vue. Vue is a smaller front-end library, but still comes with lots of useful front-end features. I like Vue because of how simple it is to learn, use, and implement into my projects!</li></a>
+            <a href = "https://backbonejs.org/"><li>Backbone. Backbone is similar to Vue, it's very simple to learn and use. It helps me cut down on loading time on my website, it's very lightweight, and easy to start! </li></a>
+
+        </ul>
+     </article>
+   </section>
+ </main>
+ 
+ <script>
+    /* Open the sidenav */
+function openNav() {
+  document.getElementById("tnav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("tnav").style.width = "0";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Top 5 Favorite YouTube Channels</title>
+   <style>
+    
+.nav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3rem;
+  transition: 0.5s; 
+  font-size:3rem;
+}
+
+.nav .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:5rem;
+    margin-left:2rem;
+}
+
+.nav-links a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:3rem;
+}
+
+#right {
+  color:red;
+}
+
+#left {
+  color:whitesmoke;
+}
+
+#right:hover {
+  background:red;
+  color:#111;
+    border-radius:1%;
+}
+
+#left:hover {
+  background:whitesmoke;
+  color:#111;
+    border-radius:1%;
+}
+
+#opnbtn {
+  font-size:3rem;
+  float:right;
+  padding:1rem;
+  background:#00668F;
+  color:#A1D0E2;
+}
+       body {
+           font-family: Arial, sans-serif;
+           line-height: 1.6;
+           margin: 0;
+           padding: 0;
+           background-color: #f4f4f4;
+       }
+       .container {
+           width: 80%;
+           margin: auto;
+           overflow: hidden;
+       }
+       header {
+           background: #165ab2;
+           color: white;
+           padding-top: 30px;
+           min-height: 70px;
+           border-bottom: #6e1de8 3px solid;
+       }
+       header h1 {
+           margin: 0;
+           padding: 0 0 10px 0;
+       }
+       main {
+           padding: 20px;
+           background: #b6c8ff;
+           color: #333;
+       }
+       main h2 {
+           color: #5054a3;
+       }
+      
+   </style>
+</head>
+<body>
+    <div id = "tnav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class = "nav-links">
+          <a href="articles.html" id = "left">My articles, tutorials, and guides</a>
+          <a href="list.html" id = "right">All of my resources</a>
+          <a href="DL.html" id = "left">Confused on Where to Start?</a>
+          <a href="contact.html" id = "right">Have an Idea?</a>
+      </div>
+      </div>
+      <span id = "opnbtn" onclick="openNav()">&#9776;</span>
+   <header>
+       <div class="container">
+           <h1>My Top 5 Favorite YouTube Channels</h1>
+       </div>
+   </header>
+   <main>
+    <div class="container">
+        <h2>1. thenewboston. Backend Development/frontend library tutorials</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yQaAGmHNn9s?si=OYuiKAckRXXIaq77" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <p>I really like this youtube channel because of how informative it is. His videos are a little bit long, but he covers a lot of information and such about complicated web interactions like web scraping, API's, and backend development. </p>
+    </div> 
+            <div class="container">
+            <h2>2. Fireship. Front-end educational content. </h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tszI9GrH1u0?si=cDgjPjAz6dOceOY9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            <p>This is one of my favorite youtubers because of how easy his content is to follow. He does so many videos on a wide variety of front-end topics, he gives me so many good ideas, and his videos are really enjoyable to watch!</p>
+        </div>
+        <div class="container">
+            <h2>3. Kevin Powell, tutorials front-end web development.</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JnTPd9G6hoY?si=qsiPf7rpvrwAG4wy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>This youtuber is my goto for tutorials. He gives so many tutorials on every aspect of front-end developments, guides for projects, and front-end libraries. His videos are inspirational, educational, and they're very in-depth. He does a really good job of explaining the 'why' behind the code.</p>
+    </div>
+
+        <div class="container">
+            <h2>4. WebDevSimplified, in-depth tutorials.</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rh3tobg7hEo?si=Bf4xCdv1KP0YBT2H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>I like this youtuber for his tutorials as well. He's a little bit more project oriented than Kevin Powell is, but he also has so many more beginner friendly projects and tutorials available. He does a good job of explaining the 'how' behind the code.
+        </div>
+
+        <div class="container">
+            <h2>5. Tiff in Tech, back-end tutorials, tools and guides for web development.</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i3sLv1sus0I?si=X_UxOeP7LwPA_UHW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            <p>I think this youtuber does a really good job of explaining a lot of the concepts behind back-end web development. She explains a lot of data storage and gathering techniques, she helps keep me up to date and aware of useful web development tools as well. </p>
+        </div>
+
+   </main>
+
+   <script>
+    /* Open the sidenav */
+function openNav() {
+  document.getElementById("tnav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("tnav").style.width = "0";
+}
+</script>
+
+</body>
+</html>
